@@ -1,0 +1,32 @@
+<link rel="stylesheet" type="text/css" href="estilos.css">
+
+<link rel="shortcut icon" href="favicon.ico" />
+
+<center>
+
+    <div class="relative">
+        <canvas id="myCanvas" width="800" height="850">
+            Tu navegador no soporta el elemento canvas.
+        </canvas>
+
+        <div class="absolute" id="startMenu">
+            <p class="centeredbig">UMG Totito Ultimate</p>
+            <p class="centered" onclick="pickTurns()"><button>Un Jugador</button></p>
+            <p class="centered" onclick="startGame(1)"><button>Dos Jugadores</button></p>
+        </div>
+        <div class="absolute" id="turnMenu" hidden="hidden">
+            <p class="centeredbig">UMG Totito Ultimate</p>
+            <p class="centered" onclick="setGame(0)"><button>Jugador Empieza</button></p>
+            <p class="centered" onclick="setGame(1)"><button>IA empieza</button></p>
+        </div>
+        <div class="absolute" id="winMenu" hidden="hidden">
+            <p class="centeredbig" id="result">Jugador 1 Gana</p>
+            <p class="centered" onclick="menu()"><button>Jugar Otra vez</button></p>
+        </div>
+        <div class="absolute fade" id="loader" hidden>
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
+</center>
+
+<script src="totito.js"></script>
